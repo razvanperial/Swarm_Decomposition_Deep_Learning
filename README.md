@@ -22,7 +22,7 @@ In order to run the code, you will need to have the following dependencies insta
 - keras
 - tensorflow
 
-Furthermore, in the **functions** direactory you can find the following files:
+Furthermore, in the **functions** directory you can find the following files:
 - **bandpass.ipynb** - contains the code for applying a bandpass filter to the data
 - **get_data.ipynb** - contains the code for reading the data from the initial dataset
 - **trimmer.ipynb** - contains the code for trimming the data
