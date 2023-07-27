@@ -9,7 +9,9 @@ More info regarding Swarm Decomposition can be found in the following paper: [li
 ### Datasets
 - **initial data** - the initial dataset, composed of EEG signals gatherd from 14 test subjects, 7 belonging to the control group and 7 belonging to the clinical group. The subjects were presented with a specific instruction representing one of 2 possibilities: *walk* or *dance*. We then have 2 crucial time intervals, one representing the EEG signals emmitted by the brain while the instruction was being processed (noted as *inst* in the datasets) and one representing the EEg signals emmited by the brain while performing the specific actian. Finally, one extra split in the data came from the initial filtering of the signals, thus splitting each dataset into 2: raw data and clean/filtered data.
 - **initial_filtered_data** - here we can see the data resulted from executing the code found in the **prepare_data** directory, which simply trims the signals, eliminates the discontinuities and applies a bandpass filter to the data.
-- **swd_data** - herewe can see the data resulted from applying the Swarm Decomposition algorithm to the initial filtered data. This dataset is going to be used as an input to our CNN.
+- **swd_data** - here we can see the data resulted from applying the Swarm Decomposition algorithm to the initial filtered data. This dataset is going to be used as an input to our CNN.
+
+Please note that due to privacy reasons, the data is not available in this repository, but with small modifications to the code, you can use your own data.
 
 The classifications task can be described as follows: given a dataset of EEG sygnals, we want to be able to classify them into one of 2 categories: *control* or *clinical*. Notice that the files are named using 2 prefixes: **P** (clinical) and **S**(control). 
 
